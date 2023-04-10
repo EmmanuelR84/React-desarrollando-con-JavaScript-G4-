@@ -1,0 +1,19 @@
+@import url(../../Variables/_Variables.css);
+
+.lista-opciones label {
+    display: block;
+    font-family: var(--normal-fontSize);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.lista-opciones select {
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    padding: 24px;
+    border: none;
+    outline-color: var(--first-color);
+    font-size: 16px;
+}

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Header from "./componentes/Header/Header";
+import Formulario from './componentes/Formulario/Formulario';
+import MiOrg from './componentes/MiOrg';
 
 function App() {
+  const [mostrarFormulario, actualizarMostrar] = useState(false);
+
+  // Ternario --> condicion ? seMuestra : noSeMuestra
+  // (b) otra forma mas resumida
+  // condicion && seMuestra
+
+  const cambiarMostrar = () => {
+    actualizarMostrar(!mostrarFormulario);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Header />
+      { mostrarFormulario === true ? <Formulario /> : <></> } {/* <></> seria como un div vacio, de esta forma no se muestra en el inspector */ }
+      {/** (b) mostrarFormulario && <Formulario /> */}
+      <MiOrg cambiarMostrar={cambiarMostrar} />
     </div>
   );
 }

@@ -1,0 +1,28 @@
+:root {
+    --first-color: #6278F7;
+    --second-color: #95FFD4;
+    --third-color: #F2F2F2;
+    --white-color: #ffffff;
+    --black-color: #000;
+
+    --hover-color: #95FFD4;
+
+    --first-team-col: #57C278;
+    --second-team-col: #82CFFA;
+    --third-team-col: #A6D157;
+    --quarter-team-col: #E06B69;
+    --fifth-team-col: #DB6EBF;
+    --sixth-team-col: #FFBA05;
+    --seventh-team-col: #FF8A29;
+
+    --first-background-col: #D9F7E9;
+    --second-background-col: #E8F8FF;
+    --third-background-col: #F0F8E2;
+    --quarter-background-col: #FDE7E8;
+    --fifth-background-col: #FAE9F5;
+    --sixth-background-col: #FFF5D9;
+    --seventh-background-col: #FFEEDF;
+
+    --normal-fontSize: 'Montserrat', sans-serif;
+    --title-fontSize: 'Prata', serif;
+}

@@ -1,0 +1,17 @@
+@import url(../../Variables/_Variables.css);
+
+.boton {
+    background-color: var(--first-color);
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: var(--normal-fontSize);
+    padding: 24px 32px;
+    border: none;
+    margin: 32px 0;
+    cursor: pointer;
+}
+
+.boton:hover {
+    color: var(--hover-color);
+}

@@ -1,0 +1,10 @@
+@import url(../../Variables/_Variables.css);
+
+.header {
+    background-color: var(--first-color);
+    text-align: center;
+}
+
+.header img {
+    width: 100%;
+}
