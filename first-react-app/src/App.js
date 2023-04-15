@@ -4,12 +4,26 @@ import Header from "./componentes/Header/Header";
 import Formulario from './componentes/Formulario/Formulario';
 import MiOrg from './componentes/MiOrg';
 import Equipo from './componentes/Equipo';
+import Footer from './componentes/Footer/Footer';
 
 function App() {
   const [mostrarFormulario, actualizarMostrar] = useState(false);
 
   // Va a inicializar como un arreglo vacio ya que van a ser varios colaboradores.
-  const [colaboradores, actualizarColaboradores] = useState([]);
+  const [colaboradores, actualizarColaboradores] = useState([
+    {
+      equipo: "Programación",
+      foto: "https://avatars.githubusercontent.com/u/81990881?v=4",
+      nombre: "Emmanuel Ramello",
+      puesto: "Desarrollador",
+    },
+    {
+      equipo: "Front End",
+      foto: "https://avatars.githubusercontent.com/u/81990881?v=4",
+      nombre: "Emmanuel Ramello",
+      puesto: "Desarrollador",
+    }
+]);
 
   // Ternario --> condicion ? seMuestra : noSeMuestra
   // (  { mostrarFormulario && <Formulario /> }  ) otra forma mas resumida
@@ -88,6 +102,8 @@ function App() {
           />
         )
       }
+
+      <Footer />
 
     </div>
   );
