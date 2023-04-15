@@ -23,6 +23,8 @@
     --sixth-background-col: #FFF5D9;
     --seventh-background-col: #FFEEDF;
 
-    --normal-fontSize: 'Montserrat', sans-serif;
-    --title-fontSize: 'Prata', serif;
+    --normal-fontFamily: 'Montserrat', sans-serif;
+    --title-fontFamily: 'Prata', serif;
+
+    --fontSize-h3: 2em;
 }

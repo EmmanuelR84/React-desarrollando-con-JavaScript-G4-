@@ -2,7 +2,7 @@
 
 .lista-opciones label {
     display: block;
-    font-family: var(--normal-fontSize);
+    font-family: var(--normal-fontFamily);
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 8px;

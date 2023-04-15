@@ -2,7 +2,7 @@
 
 .campo-texto {
     margin: 24px 0;
-    font-family: var(--normal-fontSize);
+    font-family: var(--normal-fontFamily);
 }
 
 .campo-texto label {

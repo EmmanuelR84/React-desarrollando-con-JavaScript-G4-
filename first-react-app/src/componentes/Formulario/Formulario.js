@@ -4,11 +4,14 @@ import CampoTexto from "../CampoTexto";
 import ListaOpciones from "../ListaOpciones";
 import Boton from "../Boton";
 
-const Formulario = () => {
+const Formulario = (props) => {
   const [nombre, actualizarNombre] = useState("");
   const [puesto, actualizarPuesto] = useState("");
   const [foto, actualizarFoto] = useState("");
   const [equipo, actualizarEquipo] = useState(""); //Si quisieramos que al cargar inicie con algun valor ya definido, lo colocamos dentro de useState('').
+
+  //Destructurar un poco para no usar tantos props.
+  const { registrarColaborador } = props;
 
   //Recibir datos del formulario.
   const manejarEnvio = (e) => {
@@ -25,7 +28,7 @@ const Formulario = () => {
       // foto,
       // equipo
     }
-    console.log(datosAEnviar);
+    registrarColaborador(datosAEnviar);
   };
 
   return (
@@ -57,6 +60,7 @@ const Formulario = () => {
         <ListaOpciones
           valor={equipo}
           actualizarEquipo={actualizarEquipo}
+          equipos={props.equipos}
         />
         {/*    <Boton texto='Crear' />  Esta es una forma de hacerlo  */}
         <Boton>Crear</Boton>
