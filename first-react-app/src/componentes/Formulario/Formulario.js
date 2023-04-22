@@ -10,8 +10,11 @@ const Formulario = (props) => {
   const [foto, actualizarFoto] = useState("");
   const [equipo, actualizarEquipo] = useState(""); //Si quisieramos que al cargar inicie con algun valor ya definido, lo colocamos dentro de useState('').
 
+  const [titulo, actualizarTitulo] = useState("");
+  const [color, actualizarColor] = useState("");
+
   //Destructurar un poco para no usar tantos props.
-  const { registrarColaborador } = props;
+  const { registrarColaborador, crearEquipo } = props;
 
   //Recibir datos del formulario.
   const manejarEnvio = (e) => {
@@ -30,6 +33,11 @@ const Formulario = (props) => {
     }
     registrarColaborador(datosAEnviar);
   };
+
+  const manejarNuevoEquipo = (e) => {
+    e.preventDefault();
+    crearEquipo({ titulo, colorPrimario: color });
+  }
 
   return (
     <section className="formulario">
@@ -64,6 +72,25 @@ const Formulario = (props) => {
         />
         {/*    <Boton texto='Crear' />  Esta es una forma de hacerlo  */}
         <Boton>Crear</Boton>
+      </form>
+      <form onSubmit={manejarNuevoEquipo}>
+        {/* para evitar q la pagina se actualice */}
+        <h2>Rellena el formulario para crear el equipo.</h2>
+        <CampoTexto
+          titulo="Titulo"
+          placeholder="Ingresar titulo"
+          required
+          valor={titulo}
+          actualizarValor={actualizarTitulo}
+        />
+        <CampoTexto
+          titulo="Color"
+          placeholder="Ingresar el color en Hex"
+          required
+          valor={color}
+          actualizarValor={actualizarColor}
+        />
+        <Boton>Registrar equipo</Boton>
       </form>
     </section>
   );
