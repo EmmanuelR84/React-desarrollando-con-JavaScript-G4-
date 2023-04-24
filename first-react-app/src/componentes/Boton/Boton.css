@@ -1,17 +1,15 @@
-@import url(../../Variables/_Variables.css);
-
-.boton {
-    background-color: var(--first-color);
-    color: #ffffff;
+.boton{
+    background-color: #6278F7;
     border-radius: 10px;
     font-weight: 700;
-    font-family: var(--normal-fontFamily);
+    font-family: 'Montserrat', sans-serif;
     padding: 24px 32px;
     border: none;
+    color: #ffffff;
     margin: 32px 0;
     cursor: pointer;
 }
 
-.boton:hover {
-    color: var(--hover-color);
+.boton:hover{
+    color: #95FFD4;
 }

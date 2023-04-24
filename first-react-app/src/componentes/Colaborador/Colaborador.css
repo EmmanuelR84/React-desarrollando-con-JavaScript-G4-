@@ -1,5 +1,3 @@
-
-
 .colaborador {
     width: 280px;
     margin-bottom: 24px;
@@ -7,28 +5,27 @@
 }
 
 .colaborador .encabezado {
-    background-color: #f0f0f0;
-    border-radius: 10px 10px 0 0;
+    background-color:  #F0F0F0;
+    border-radius: 10px 10px 0px 0px;
 }
-
-.colaborador img{
+.colaborador img {
     width: 100px;
     border-radius: 50%;
     position: relative;
     bottom: -50px;
 }
 
-.colaborador .info{
+.colaborador .info {
     background: #FFFFFF;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
-    border-radius: 0 0 10px 10px;
+    border-radius: 0px 0px 10px 10px;
     padding-top: 90px;
     padding-bottom: 40px;
     min-height: 100px;
-    font-family: "Monserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.colaborador .info h4{
+.colaborador .info h4 {
     color: #6278F7;
     font-size: 18px;
     line-height: 22px;
@@ -36,22 +33,17 @@
     margin-bottom: 8px;
 }
 
-.colaborador .info h5{
-    color: #212121;
+.colaborador .info h5 {
     font-size: 18px;
-    padding: 0 24px;
     line-height: 22px;
+    color: #212121;
+    padding: 0 24px;
     font-weight: 400;
     margin: 0;
 }
 
-.eliminar {
+.eliminar{
     position: absolute;
-    top: .5rem;
-    right: .5rem;
-    cursor: pointer;
-}
-
-.iconLike {
-    cursor: pointer;
+    right: -15px;
+    top: -15px;
 }

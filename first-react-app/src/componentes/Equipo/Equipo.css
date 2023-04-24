@@ -1,31 +1,29 @@
-@import url('../../Variables/_Variables.css');
-
-.equipo {
+.equipo{
     width: 100%;
-    padding: 2em;
+    padding: 32px;
     box-sizing: border-box;
     text-align: center;
-    font-size: var(--fontSize-h3);
+    font-size: 32px;
     position: relative;
 }
 
-.input-color {
+.input-color{
     position: absolute;
-    top: 1.2em;
-    right: 3.2em;
+    top: 20px;
+    right: 50px;
 }
 
-.equipo h3 {
+.equipo h3{
     font-weight: 400;
     color: #212121;
     border-bottom: 4px solid;
     display: inline-block;
     padding-bottom: 8px;
-    font-family: var(--title-fontFamily);
 }
 
-.colaboradores {
+.colaboradores{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
