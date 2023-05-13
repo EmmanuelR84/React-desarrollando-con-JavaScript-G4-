@@ -1,30 +1,29 @@
-@import url(../../Variables/_Variables.css);
-
-.campo {
+.campo{
     margin: 24px 0;
-    font-family: var(--normal-fontFamily);
+    font-family: 'Montserrat', sans-serif;
 }
 
-.campo label {
+.campo label{
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 600;
     display: block;
     margin-bottom: 8px;
 }
 
-.campo input {
+.campo input{
     width: 100%;
-    background-color: var(--white-color);
+    background-color: #FFFFFF;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
-    border: none;
+    border:none;
     padding: 30px 20px;
-    outline-color: var(--first-color);
+    outline-color: #6278F7;
     font-size: 16px;
-    color: #AFAFAF;
     box-sizing: border-box;
 }
 
-.campo-color input {
+
+.campo-color input{
     height: 40px;
     padding: 5px 20px;
 }
